@@ -1,0 +1,131 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #002060;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+}
+
+/* Botão do menu no cabeçalho */
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Navegação */
+nav {
+    background-color: #022e5a;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+/* Estilo do Mini Menu Superior */
+nav ul li a {
+    color: rgb(237, 237, 241);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #0077CC;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #022e5a;
+    border-radius: 5px;
+}
+
+/* Seção de boas-vindas */
+.bem-vindo {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+/* Título de boas-vindas */
+.bem-vindo h2 {
+    color: #002060;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos dentro da seção de boas-vindas */
+.bem-vindo p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .contato, .redes-sociais {
+    margin-top: 10px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    /* Ajustando a largura da seção de boas-vindas em dispositivos móveis */
+    .bem-vindo {
+        width: 90%;
+        padding: 15px;
+    }
+}
